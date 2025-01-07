@@ -2,53 +2,31 @@ package testingisgood;
 
 import java.util.ArrayList;
 
-public class TNumbers
+public class TNumber
 {
-    private final int number;
+    String num;
 
-    public TNumbers(int number) {
-        this.number = number;
+    public TNumber(String num) {
+        this.num = num;
     }
 
     public static void main(String[] args)
     {
-        ArrayList<TNumbers> numbers = new ArrayList<>(10);
+        ArrayList<TNumber> TNumbers = new ArrayList<>(10);
 
-        TNumbers one = new TNumbers(1);
-        TNumbers two = new TNumbers(2);
-        TNumbers three = new TNumbers(3);
-        numbers.add(one);
 
-        for (testingisgood.TNumbers TNumbers : numbers)
-        {
-            System.out.println(numbers.get(numbers.indexOf(one)));
+        TNumbers.add(new TNumber("1"));
+        TNumbers.add(new TNumber("2"));
+        TNumbers.add(new TNumber("3"));
+        TNumbers.add(new TNumber("4"));
+        TNumbers.add(new TNumber("5"));
+        TNumbers.add(new TNumber("6"));
+        TNumbers.add(new TNumber("7"));
+        TNumbers.add(new TNumber("8"));
+        TNumbers.add(new TNumber("9"));
+        TNumbers.add(new TNumber("10"));
+
+
+        TNumbers.forEach(TNumber -> System.out.println("Текущее число = " + TNumber.num));
         }
     }
-}
-
-//public class Cat
-//{
-//
-   //  private String name;
-
-    //public Cat(String name) {
-     //   this.name = name;
-    //}
-
-//public static void main(String[] args) {
-
-  //  ArrayList<Cat> cats = new ArrayList<>();
-    //Cat thomas = new Cat("Томас");
-    //Cat behemoth = new Cat("Бегемот");
-    //Cat philipp = new Cat("Филипп Маркович");
-    //Cat pushok = new Cat("Пушок");
-
-    //cats.add(thomas);
-    //cats.add(behemoth);
-    //cats.add(philipp);
-    //cats.add(pushok);
-
-    //int thomasIndex = cats.indexOf(thomas);
-    //System.out.println(thomasIndex);
-//}
-//}
